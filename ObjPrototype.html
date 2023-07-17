@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Person(first, last, age, eye) {
+            this.firstName = first;
+            this.lastName = last;
+            this.age = age;
+            this.eyeColor = eye;
+        }
+
+
+        //add object property using prototype
+        //The prototype property allows you to add new methods to objects constructors
+        Person.prototype.nationality = "English";
+
+        const myFather = new Person("John", "Doe", 50, "blue");
+
+        console.log("I am " + myFather.firstName + " " + myFather.lastName + " my age is " + myFather.age + " and nationality is " + myFather.nationality)
+
+    </script>
+</body>
+
+</html>
