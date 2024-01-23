@@ -4,7 +4,7 @@ let company = {
 
     showList() {
         this.students.forEach(
-            student => console.log(this.title + " " + this.students)
+            student => console.log("company name is "+this.title + " " +"students name is "+ this.students)
         )
     }
 }
