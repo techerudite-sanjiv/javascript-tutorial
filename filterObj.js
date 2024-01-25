@@ -21,7 +21,6 @@ const users = [
     },
 ]
 
-
 const result = users.filter((item) => item.age > 23)
 
 console.log(result)
