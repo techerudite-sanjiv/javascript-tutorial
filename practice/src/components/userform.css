@@ -1,0 +1,117 @@
+.contact-form-box {
+    width: 100%;
+    max-width: 45%;
+    margin: 50px auto;
+    padding: 40px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0 0 3px #eee;
+
+}
+
+.form-data Button {
+    background: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #278515;
+    border: 1.5px solid #278515
+    
+}
+.form-data Button i {
+    padding: 3px;
+    border-radius: 20px;
+    border: 1.5px solid #278515
+    
+}
+
+.form-data Label {
+    font-weight: 700;
+}
+
+.form-data Input {
+    padding: 10px 0;
+    border-radius: 13px;
+    outline: none;
+    color: #bac2ba;
+    border: 1px solid #bac2ba;
+}
+
+
+.logo-design {
+    position: relative;
+    top: 0;
+    z-index: 1;
+    background: red;
+    height: 100px;
+    width: 100px;
+
+}
+
+
+.custom-modal {
+    margin: 50px;
+}
+.custom-modal-inp Input{
+    padding: 10px 0;
+    border-radius: 13px;
+    outline: none;
+    color: #bac2ba;
+    border: 1px solid #bac2ba;
+}
+.custom-modal Button {
+    background: #fff;
+    color: #278515;
+    border: 1px solid #278515;
+    border-radius: 20px;
+}
+
+.custom-model Input {
+    padding: 10px 0;
+    border-radius: 13px;
+    outline: none;
+    color: #bac2ba;
+    border: 1px solid #bac2ba;
+}
+.important {
+    font-size: 13px;
+    color: #6c6c6c;
+   
+}
+
+.custom-modal .remove-btn {
+    background: #fff;
+    color: #CA0000;
+    border: 1px solid #CA0000;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-modal .add-btn {
+    background: #fff;
+    color: #278515;
+    border: 1px solid #278515;
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.custom-modal-btn{
+    width: 100%;
+}
+.custom-modal-btn Button{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background:#278515 ;
+    padding: 14px 0;
+    border-radius: 17px;
+    color: #fff;
+    border: 0;
+}
