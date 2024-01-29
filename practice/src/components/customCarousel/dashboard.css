@@ -1,0 +1,15 @@
+.abcd{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
+}
+
+.bcd{
+    width: 100%;
+    
+}
+img{
+    width: 100vw;
+    height: 500px;
+}
