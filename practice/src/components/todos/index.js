@@ -34,8 +34,8 @@ const TodoBox = () => {
     setArray(temp_delete)
   }
 
-  useEffect(()=>{
-  },[array])
+  useEffect(() => {
+  }, [array])
 
 
 
@@ -80,3 +80,16 @@ const TodoBox = () => {
 }
 
 export default TodoBox
+
+
+const promise1 = new Promise((resolve) => setTimeout(() => resolve('First'), 1000));
+const promise2 = new Promise((resolve, reject) => setTimeout(() => reject('Error in Second'), 500));
+const promise3 = new Promise((resolve) => setTimeout(() => resolve('Third'), 2000));
+
+Promise.all([promise1, promise2, promise3])
+  .then((results) => {
+    console.log('All promises resolved:', results);
+  })
+  .catch((error) => {
+    console.error('An error occurred:', error); // Will log 'Error in Second'
+  });
