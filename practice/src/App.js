@@ -18,6 +18,7 @@ import { options, stripePromise } from './stripe/getStripe';
 import DataTable from './components/dataTable';
 import CustomCarousel from './components/customCarousel';
 import TodoBox from './components/todos';
+import Example1 from './components/counter';
 
 function App() {
 
@@ -46,7 +47,9 @@ function App() {
       {/* <DataTable/> */}
       {/* <CustomCarousel /> */}
       {/* <TodoBox/> */}
-saddddddddddddddddddddd
+
+<Example1/>
+
     </div>
   );
 }

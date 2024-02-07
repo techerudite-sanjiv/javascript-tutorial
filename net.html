@@ -1,140 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+<script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Netflix Image</title>
-    <style>
-        * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
 
-body {
-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-line-height: 1.6;
-}
+    // const str="sanjeev"
+    // let res=[...str].reduce((a,e)=>{
+    //     console.log(a,e)
+    //     a[e] ? a[e]+1 : 1
+    //     return a
+    // },{})
 
-.container {
-width: 80%;
-margin: auto;
-overflow: hidden;
-}
 
-.netflix-logo {
-text-align: center;
-margin-bottom: 2rem;
-}
+    // let arr = [
+    //     'chennai->banglore',
+    //     'delhi->goa',
+    //     'goa->chennai',
+    //     'bombay->delhi',
+    // ];
+        
+    // let res = arr.map((item) => {
+    //     return item.split("->")
+    // }).flat();
+    // console.log(`The source is ${res[0]} and the destination is ${res[res.length - 1]}`)
 
-.netflix-logo img {
-height: 8rem;
-}
 
-.content {
-display: flex;
-align-items: center;
-justify-content: space-between;
-flex-wrap: wrap;
-margin-top: 3rem;
-}
+    // let arr = [
+    //     'chennai->banglore',
+    //     'delhi->goa',
+    //     'goa->chennai',
+    //     'bombay->delhi',
+    // ];
 
-.text-group {
-width: 40%;
-}
+    // let source = [], destination = [];
 
-.text-group h1 {
-font-size: 3rem;
-margin-bottom: 0.5rem;
-}
+    // for (let i = 0; i < arr.length; i++) {
+    //     const [src, dest] = arr[i].split('->');
+    //     source.push(src)
+    //     destination.push(src)
+    // }
 
-.text-group h2 {
-font-size: 1.5rem;
-margin-bottom: 2rem;
-}
+    // console.log("The source station is => " + source[0] + " and destination is => " + destination[destination.length - 1])
+    // function myfun(nums) {
+    //     let str111 = ""
+    //     for (let i = nums.length - 1; i >= 0; i--) {
+    //         str111  =str111+ nums[i];
+    //     }
 
-.input-group {
-width: 40%;
-display: flex;
-margin-bottom: 2rem;
-}
+    //     console.log(str111)
+    // }
+    // myfun("Hello")
 
-.input-group input {
-width: 80%;
-padding: 0.5rem;
-font-size: 1.2rem;
-}
-
-.input-group button {
-width: 20%;
-padding: 0.5rem;
-background-color: red;
-color: white;
-font-size: 1.2rem;
-border: none;
-cursor: pointer;
-}
-
-.offer-group {
-width: 40%;
-display: flex;
-justify-content: space-between;
-}
-
-.offer {
-width: 30%;
-}
-
-.offer h3 {
-font-size: 1.2rem;
-margin-bottom: 0.5rem;
-}
-
-.offer h4 {
-font-size: 1rem;
-margin-bottom: 0.5rem;
-}
-
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <div class="netflix-logo">
-            <img src="netflix-logo.png" alt="Netflix Logo">
-        </div>
-        <div class="content">
-            <div class="text-group">
-                <h1>Unlimited movies, TV shows and more.</h1>
-                <h2>Watch anywhere. Cancel anytime.</h2>
-            </div>
-            <div class="input-group">
-                <input type="email" placeholder="Enter your email">
-                <button>Get Started ></button>
-            </div>
-            <div class="offer-group">
-                <div class="offer">
-                    <h3>*A English</h3>
-                    <h4>EXTENDED CUT</h4>
-                    <p>SALAAR TAM</p>
-                </div>
-                <div class="offer">
-                    <h3>THE DA</h3>
-                    <h4>NIDE NETFLIX</h4>
-                    <p>All OF US ARE DEAD THOUHA NE SON P ONGRE</p>
-                </div>
-                <div class="offer">
-                    <h3>ALA</h3>
-                    <h4>SEXLIFE BADLAND HUNTERS</h4>
-                    <p>KILLER GRISE watc</p>
-                    <p>PAPA Get Started ></p>
-                    <p>SALAAD</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
-
-</html>
+    function myfun() {
+        var a = 10;
+        function  getValue() {
+            a++;
+            console.log(a);
+            var a = 12;
+        }
+        getValue()
+    }
+    myfun();
+</script>
