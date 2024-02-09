@@ -1,6 +1,4 @@
 <script>
-
-
     // const str="sanjeev"
     // let res=[...str].reduce((a,e)=>{
     //     console.log(a,e)
@@ -48,14 +46,45 @@
     // }
     // myfun("Hello")
 
-    function myfun() {
-        var a = 10;
-        function  getValue() {
-            a++;
-            console.log(a);
-            var a = 12;
-        }
-        getValue()
-    }
-    myfun();
+    // function myfun() {
+    //     var a = 10;
+    //     function  getValue() {
+    //         a++;
+    //         console.log(a);
+    //         var a = 12;
+    //     }
+    //     getValue()
+    // }
+    // myfun();
+
+// Normal function
+function regularFunction() {
+  console.log(this); // 'this' refers to the global object or undefined in strict mode
+  console.log(">>>",arguments,">>>"); // logs the arguments passed to the function
+}
+
+// Arrow function
+const arrowFunction = () => {
+  console.log(this); // 'this' refers to the enclosing lexical scope
+  // console.log(arguments); // Error: arguments is not defined in arrow functions
+}
+
+regularFunction(); // Global object or undefined
+arrowFunction(); // 'this' of the enclosing scope
+
+// Example of using a normal function as a constructor
+function Person(name) {
+  this.name = name;
+}
+
+const john = new Person('John');
+console.log(john.name); // John
+
+// Arrow functions cannot be used as constructors
+const ArrowPerson = (name) => {
+  this.name = name; // TypeError: ArrowPerson is not a constructor
+}
+const smith = new ArrowPerson('Smith');
+
+
 </script>
